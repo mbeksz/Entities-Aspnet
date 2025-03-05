@@ -1,0 +1,15 @@
+@model Product
+
+<div class="col-md-4">
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+        <h5 class="card-title">@Model.ProductName</h5>
+        <p class="card-text">@Model.Price.ToString("c")</p>
+    <a class="btn btn-primary" asp-action="Get" asp-route-id="@Model.ProductId">
+            Get Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+  </div>
+</div>        
+</div>
