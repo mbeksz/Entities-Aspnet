@@ -2,9 +2,10 @@
 using Entities.Models;
 namespace Repositories
 {
-      public class RepositoryContext : DbContext
+    public class RepositoryContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public RepositoryContext(DbContextOptions<RepositoryContext> options) : base(options)
         {
 
@@ -30,6 +31,19 @@ namespace Repositories
                     ProductId = 3,
                     ProductName = "Product 3",
                     Price = 300
+                }
+            );
+
+            modelBuilder.Entity<Category>().HasData(
+                new Category
+                {
+                    CategoryId = 1,
+                    CategoryName = "Book"
+                },
+                new Category
+                {
+                    CategoryId = 2,
+                    CategoryName = "Electronic"
                 }
             );
         }
