@@ -67,3 +67,5 @@ C:\Users\LENOVO\Desktop\MVC\Store\StoreApp\bin\Debug\net7.0\Entities.dll
 C:\Users\LENOVO\Desktop\MVC\Store\StoreApp\bin\Debug\net7.0\Entities.pdb
 C:\Users\LENOVO\Desktop\MVC\Store\StoreApp\bin\Debug\net7.0\Repositories.dll
 C:\Users\LENOVO\Desktop\MVC\Store\StoreApp\bin\Debug\net7.0\Repositories.pdb
+C:\Users\LENOVO\Desktop\MVC\Store\StoreApp\bin\Debug\net7.0\Services.dll
+C:\Users\LENOVO\Desktop\MVC\Store\StoreApp\bin\Debug\net7.0\Services.pdb
