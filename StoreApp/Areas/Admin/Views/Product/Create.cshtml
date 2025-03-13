@@ -1,0 +1,27 @@
+@model Product
+
+<div class="text-center ">
+    <div class="display-6">Create</div>
+</div>
+<form method="post" asp-action="Create">
+
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <div class="mb-3">
+        <label asp-for="ProductName" class="form-label">Product name</label>
+        <input type="text" asp-for="ProductName" class="form-control" id="ProductName">
+        <div id="ProductName" class="form-text">Enter Product name.</div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label">Price</label>
+        <input type="number" asp-for="Price" class="form-control" id="Price">
+        <div id="Price" class="form-text">Enter price</div>
+    </div>
+    <div class="btn-group">
+        <button type="submit" class="btn btn-primary">Save
+            <i class="fa fa-save"></i>
+        </button>
+        <a asp-action="Index" class="btn btn-outline-primary">Products
+            <i class="fa fa-list"></i>
+        </a>
+    </div>
+</form>

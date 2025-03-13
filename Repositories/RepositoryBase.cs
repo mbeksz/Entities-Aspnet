@@ -13,6 +13,11 @@ namespace Repositories
             _repositoryContext = repositoryContext;
         }
 
+        public void Create(T entity)
+        {
+            _repositoryContext.Set<T>().Add(entity);
+        }
+
         public IQueryable<T> FindAll(bool trackChanges)
         {
             return trackChanges ? _repositoryContext.Set<T>()
@@ -23,6 +28,11 @@ namespace Repositories
         {
            return trackChanges ? _repositoryContext.Set<T>().FirstOrDefault(expression)
                                 : _repositoryContext.Set<T>().AsNoTracking().FirstOrDefault(expression);
+        }
+
+        public void Remove(T entity)
+        {
+            _repositoryContext.Set<T>().Remove(entity);
         }
     }
 }
